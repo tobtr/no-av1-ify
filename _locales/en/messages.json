@@ -1,15 +1,15 @@
 {
   "extensionDescription": {
-    "message": "Makes YouTube stream H.264 videos instead of VP8/VP9 videos",
+    "message": "Makes YouTube not stream AV1 videos",
     "description": "Extension description"
   },
 
   "optionsTitle": {
-    "message": "h264ify Options"
+    "message": "no-av1-ify Options"
   },
 
   "optionsEnable": {
-    "message": "Enable h264ify"
+    "message": "Enable no-av1-ify"
   },
 
   "optionsBlock60fps": {
