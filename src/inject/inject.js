@@ -26,11 +26,11 @@
 // https://developer.chrome.com/docs/extensions/reference/api/scripting#type-ExecutionWorld
 
 (function () {
-  if (localStorage['h264ify-enable'] === 'false') {
+  if (localStorage['no-av1-ify-enable'] === 'false') {
     return;
   }
 
-  if (localStorage['h264ify-battery_only'] === 'true' && navigator.getBattery) {
+  if (localStorage['no-av1-ify-battery_only'] === 'true' && navigator.getBattery) {
     navigator.getBattery().then(function(battery) {
       if (!battery.charging) {
         override();
@@ -65,7 +65,7 @@
         if (type.indexOf(disallowed_types[i]) !== -1) return '';
       }
 
-      if (localStorage['h264ify-block_60fps'] === 'true') {
+      if (localStorage['no-av1-ify-block_60fps'] === 'true') {
         var match = /framerate=(\d+)/.exec(type);
         if (match && match[1] > 30) return '';
       }
