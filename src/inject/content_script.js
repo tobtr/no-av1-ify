@@ -29,14 +29,14 @@
 // https://developer.chrome.com/docs/extensions/reference/api/scripting#type-ExecutionWorld
 
 // Set defaults for options stored in localStorage
-if (localStorage['h264ify-enable'] === undefined) {
-  localStorage['h264ify-enable'] = true;
+if (localStorage['no-av1-ify-enable'] === undefined) {
+  localStorage['no-av1-ify-enable'] = true;
 }
-if (localStorage['h264ify-block_60fps'] === undefined) {
-  localStorage['h264ify-block_60fps'] = false;
+if (localStorage['no-av1-ify-block_60fps'] === undefined) {
+  localStorage['no-av1-ify-block_60fps'] = false;
 }
-if (localStorage['h264ify-battery_only'] === undefined) {
-  localStorage['h264ify-battery_only'] = false;
+if (localStorage['no-av1-ify-battery_only'] === undefined) {
+  localStorage['no-av1-ify-battery_only'] = false;
 }
 
 // Save chrome.storage.local options in localStorage.
@@ -49,8 +49,8 @@ chrome.storage.local.get({
   block_60fps: false,
   battery_only: false,
  }, function(options) {
-   localStorage['h264ify-enable'] = options.enable;
-   localStorage['h264ify-block_60fps'] = options.block_60fps;
-   localStorage['h264ify-battery_only'] = options.battery_only;
+   localStorage['no-av1-ify-enable'] = options.enable;
+   localStorage['no-av1-ify-block_60fps'] = options.block_60fps;
+   localStorage['no-av1-ify-battery_only'] = options.battery_only;
  }
 );
