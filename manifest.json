@@ -1,6 +1,6 @@
 {
-  "name": "h264ify",
-  "version": "2.0.1",
+  "name": "no-av1-ify",
+  "version": "1.0.0",
   "manifest_version": 3,
   "description": "__MSG_extensionDescription__",
   "homepage_url": "https://github.com/erkserkserks/h264ify",
@@ -15,7 +15,7 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "h264ify",
+    "default_title": "no-av1-ify",
     "default_popup": "options.html"
   },
   "background": {
